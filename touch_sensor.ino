@@ -26,12 +26,12 @@ void loop()
   lightON = val;  
   if(touched == HIGH)
   {
-    Serial.println("LIGHTS ON");
+    Serial.println("LIGHTS OFF");
     digitalWrite(ledPin,LOW);
   }
   else
   {
-    Serial.println("LIGHTS OFF");
+    Serial.println("LIGHTS ON");
     digitalWrite(ledPin,HIGH);
   }
   delay(100);
