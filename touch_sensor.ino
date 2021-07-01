@@ -14,6 +14,16 @@ void setup()
 
 void loop()
 {
+
+ val = digitalRead(touchPin);
+
+ if(val == HIGH)
+ {
+  touched = 1-touched;
+  delay(100);
+ }
+
+  lightON = val;  
   if(touched == HIGH)
   {
     Serial.println("LIGHTS ON");
